@@ -1,0 +1,122 @@
+:root {
+  /* FONTS */
+  --font-title-primary: custom font;
+  --font-title-secondary: custom font;
+  --font-text: custom font;
+
+  /* BASE COLORS */
+  --color-black-pure: #000;
+  --color-white-pure: #fff;
+
+  /* PALETTE COLORS */
+  --color-primary: gray;
+  --color-secondary: gray;
+  --color-tertiary: gray;
+  --color-quaternary: gray;
+
+  /* OTHERS VARIANTS */
+  --cap-overlay: rgba(0, 0, 0, 0.5);
+  /* BACKGROUNDS & TEXTURES */
+
+  /* GLOBAL ANIMATIONS */
+}
+
+* {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-primary)
+}
+
+/* scrollbar custom */
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 2rem;
+}
+
+h1 {
+  font-family: var(--font-title-primary);
+}
+
+h2,
+a,
+button {
+  font-family: var(--font-title-secondary);
+}
+
+p,
+h3,
+::placeholder {
+  font-family: var(--font-text);
+}
+
+/* ELEMENTS BROWSER STYLES OFF */
+p {
+  word-wrap: break-word;}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+h3,
+a,
+input,
+textarea {
+  letter-spacing: 0.05rem;
+}
+
+img,
+svg,
+button {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+button {
+  border: none;
+}
+
+input,
+textarea:focus {
+  outline: none;
+}
+
+/* CUSTOM URL FONTS */
+
+@font-face {
+  font-family: Star;
+  src: url(/public/assets/font/title/G7StarForce.woff2) format('woff2');
+}
