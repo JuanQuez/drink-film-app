@@ -1,0 +1,21 @@
+.error-message {
+  height: 20vh;
+  font-size: 4rem;
+  margin: 1.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;;
+
+  h3 {
+    color: var(--color-primary);
+    font-size: clamp(1.2rem, 2vw, 2.2rem);
+  }
+
+  svg {
+    color: var(--color-primary);
+    width: clamp(2.2rem, 4vw, 4.1rem);
+  }
+}

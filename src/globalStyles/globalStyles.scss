@@ -1,21 +1,30 @@
+// IMPORT BOOTSTRAP STYLES: https://getbootstrap.com/docs/5.3/customize/sass/
+@import "bootstrap/scss/bootstrap";
+// IMPORT CUSTOM GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root {
   /* FONTS */
-  --font-title-primary: custom font;
-  --font-title-secondary: custom font;
-  --font-text: custom font;
+  --font-title-primary: "Archivo Black", sans-serif;
+  --font-title-secondary: "Roboto", sans-serif;
+  --font-text: "Ubuntu", sans-serif;
 
   /* BASE COLORS */
   --color-black-pure: #000;
   --color-white-pure: #fff;
 
   /* PALETTE COLORS */
-  --color-primary: gray;
+  --color-primary: red;
   --color-secondary: gray;
   --color-tertiary: gray;
   --color-quaternary: gray;
+  /* SHADE COLORS */
+  --color-shade-primary: rgb(206, 1, 1);
 
   /* OTHERS VARIANTS */
-  --cap-overlay: rgba(0, 0, 0, 0.5);
+  --cap-overlay: rgba(0, 0, 0, 0.7);
   /* BACKGROUNDS & TEXTURES */
 
   /* GLOBAL ANIMATIONS */
@@ -28,6 +37,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: var(--color-black-pure);
+}
+
 h1,
 h2,
 h3,
@@ -37,10 +50,6 @@ h4 {
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  background: var(--color-primary)
 }
 
 /* scrollbar custom */
@@ -57,14 +66,14 @@ body {
   border-radius: 2rem;
 }
 
-h1 {
+h1, a {
   font-family: var(--font-title-primary);
 }
 
 h2,
-a,
 button {
   font-family: var(--font-title-secondary);
+  font-weight: 900;
 }
 
 p,

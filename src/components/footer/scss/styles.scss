@@ -1,0 +1,20 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4dvh;
+  color: var(--color-white-pure);
+  margin: 1rem;
+
+  p, a {
+    font-size: clamp(.9rem, 1.2vw, 1.3rem);
+  }
+  
+  a {
+    color: var(--color-primary);
+  }
+  
+  a:hover {
+    color: var(--color-white-pure);
+  }
+}

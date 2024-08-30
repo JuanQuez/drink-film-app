@@ -1,9 +1,11 @@
+import Foot from "./components/footer/Foot";
+import MovieAPI from "./components/movie-api/MovieAPI";
+
 function App() {
   return (
     <>
-      <div>
-        <h1>app</h1>
-      </div>
+      <MovieAPI />
+      <Foot />
     </>
   );
 }

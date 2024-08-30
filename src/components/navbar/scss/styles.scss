@@ -1,0 +1,15 @@
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white-pure);
+  font-size: clamp(.9rem, 1.2vw, 1.8rem);
+
+  svg {
+    height: clamp(2rem, 4vw, 4rem);
+  }
+}
+
+.navbar .navbar-brand:hover {
+  color: var(--color-white-pure);
+}

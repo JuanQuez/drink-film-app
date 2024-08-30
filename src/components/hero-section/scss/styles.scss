@@ -1,0 +1,80 @@
+.hero-container {
+  height: 70dvh;
+  position: relative;
+  display: flex;
+  text-align: center;
+  background: url(/assets/img/hero-images/net-background.jpg) center/cover
+    no-repeat;
+
+  .hero-info-bx {
+    height: 100%;
+    width: 50rem;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1,
+    p,
+    input,
+    button,
+    ::placeholder {
+      z-index: 3;
+      color: var(--color-white-pure);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 4rem);
+    }
+
+    p {
+      font-size: clamp(1rem, 1.8vw, 2.5rem);
+    }
+
+    .search-input-bx {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      input {
+        padding: 1.5rem;
+        font-size: clamp(0.9rem, 1.2vw, 1.4rem);
+        color: var(--color-white-pure);
+        background: var(--color-white-pure);
+        border: 0.2rem solid var(--color-primary);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        background: transparent;
+        width: 50%;
+      }
+
+      input:focus {
+        box-shadow: 2px 2px 15px var(--color-primary) inset;
+      }
+
+      button {
+        height: 100%;
+        width: 7rem;
+        border-radius: 0.5rem;
+        background: var(--color-primary);
+        font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+      }
+
+      button:hover {
+        background: var(--color-shade-primary);
+      }
+    }
+  }
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  height: 70dvh;
+  width: 100%;
+  background: var(--cap-overlay);
+}
