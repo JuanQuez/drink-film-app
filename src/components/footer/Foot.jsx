@@ -5,7 +5,7 @@ const Foot = () => {
   return (
     <div className="footer-container">
       <p>
-        Desarrollada por{" "}
+        Developed by{" "}
         <a
           target="_blank"
           href="https://www.linkedin.com/in/of-juan-quez-dev-contact-me/"
